@@ -1,4 +1,4 @@
-@if (Session::has('danger'))
+                @if (Session::has('danger'))
                 <div class="alert alert-danger text-center" role="alert">
                     {{ Session::get('danger')}}
                 </div>
