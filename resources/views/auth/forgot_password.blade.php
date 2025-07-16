@@ -29,7 +29,7 @@
                 @enderror
 
                 <label for="email-send" class="form-label">Email</label>
-                <input type="email" name="email-send" id="email-send" class="form-control mb-3 @error('email-error') is-invalid @enderror" value=" @if(Session::has('old_email')) {{Session::get('old_email')}}  @endif "  required autocomplete="email" placeholder="Enter your mail" autofocus>
+                <input type="email" name="email-send" id="email-send" class="form-control mb-3 @error('email-success') is-valid @enderror @error('email-error') is-invalid @enderror" value=" @if(Session::has('old_email')) {{Session::get('old_email')}}  @endif "  required autocomplete="email" placeholder="Enter your mail" autofocus>
 
                 <div class="d-grid gap-2 mb-3">
                     <button class="btn btn-primary" type="submit">Reset password</button>

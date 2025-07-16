@@ -30,6 +30,8 @@ Route::controller(LoginController::class)->group(function(){
 
     Route::match(['get', 'post'], '/forgot_password', 'forgotPassword')->name('app_forgot_password');
 
+    Route::match(['get', 'post'], '/change_password/{token}', 'changePassword')->name('app_change_password');
+
 
 });
 
